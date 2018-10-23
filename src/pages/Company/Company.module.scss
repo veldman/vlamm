@@ -1,0 +1,15 @@
+@import "../../styles/colors/buoy";
+
+.icons {
+  :local {
+    svg:hover {
+      color: $success;
+    }
+  }
+}
+
+.spacing {
+    margin: 2rem 0 ;
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,5 @@
+# TODO
+
+## Polyfills
+
+- IntersectionObserver

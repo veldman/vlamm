@@ -1,0 +1,57 @@
+@import "../../styles/colors";
+
+.heroTitle {
+  font-weight: 300 !important;
+  // color: white !important;
+  margin: 0 !important;
+}
+
+.heroSubtitle {
+  // font-weight: 300 !important;
+  color: white !important;
+  margin-left: 1rem;
+}
+
+.button {
+  // color: white !important;
+  &:hover,
+  &:focus {
+    color: $black !important;
+  }
+}
+
+:global {
+  @media screen and (max-width: 1024px) {
+    .navbar.is-fixed-top {
+      padding-left: 1.5rem;
+    }
+
+    .navbar-menu.is-active {
+      float: right;
+    }
+  }
+  .navbar.is-dark {
+    background-color: $black;
+  }
+  .no-underscore {
+    text-decoration: none !important;
+  }
+
+  .navbar .navbar-item img {
+    max-height: 6rem;
+    transition: max-height .3s;
+  }
+
+  .content .navbar.is-fixed-top  h1 {
+    font-size: 2em;
+    transition: font-size 1s;
+  }
+
+  .navbar.is-fixed-top .navbar-item img {
+    max-height: 1.75rem;
+  }
+
+  .content .navbar  h1 {
+    font-size: 4em;
+  }
+}

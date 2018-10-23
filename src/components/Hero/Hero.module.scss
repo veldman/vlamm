@@ -1,0 +1,22 @@
+@import '../../styles/colors';
+
+.root {
+  position: relative;
+  
+  overflow-x: hidden;
+  &:after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    bottom: -110vw;
+    left: -10vw;
+    background-color: $amaranth;
+    width: 120vw;
+    height: 120vw;
+    border-radius: 100%;
+  }
+}
+
+.body {
+  z-index: 2;
+}
